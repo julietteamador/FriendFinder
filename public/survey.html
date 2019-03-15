@@ -16,6 +16,7 @@
     <hr>
   </div>
       <form>
+          <div class="container1">
           <h3>About You</h3>
           <div class="form-group">
             <label for="Name">Name</label>
@@ -25,26 +26,64 @@
             <label for="age">Age</label>
             <input type="age" class="form-control" id="exampleInputAge" placeholder="Age">
           </div>
-        <div class="container">
           <div class="form-group">
         <h4>Question 1</h4>
         <h5>How often do you go out partying?</h5>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select an option
+          </button>
+          <div class="dropdown-menu" aria-labelledby="Select An Option">
+            <a class="dropdown-item" href="#">Always</a>
+            <a class="dropdown-item" href="#">Never</a>
+            <a class="dropdown-item" href="#">Sometimes</a>
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <h6>Question 2</h6>
-        <h7>You fall under peer pressure easily.</h7>
+        <h7>Do you fall under peer pressure easily?</h7>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select an option
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Always</a>
+            <a class="dropdown-item" href="#">Never</a>
+            <a class="dropdown-item" href="#">Sometimes</a>
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <h8>Question 3</h8>
         <br>
         <h9>You think that everyone’s views should be respected regardless of whether they are supported by facts or not</h9>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select an option
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Always</a>
+            <a class="dropdown-item" href="#">Never</a>
+            <a class="dropdown-item" href="#">Sometimes</a>
+          </div>
       </div>
       <div class="form-group">
         <h10>Question 4</h10>
         <br>
         <h11>You feel more energetic after spending time with a group of people.</h11>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select an option
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Always</a>
+            <a class="dropdown-item" href="#">Never</a>
+            <a class="dropdown-item" href="#">Sometimes</a>
+          </div>
       </div>
       <div class="text-aligned">
+        <br>
           <button type="submit" class="btn btn-primary btn-md" id="add-btn">
             <span class="fa fa-fire"></span> Submit</button>
         </div>

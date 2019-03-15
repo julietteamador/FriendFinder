@@ -15,46 +15,48 @@ var friends = [{
     name: "Mitchell", 
     age: "33", 
     scores: [
-        "4",
-        "2",
-        "2",
-        "1"
+        "always", 
+        "never", 
+        "sometimes"
     ]
 }, {
     name: "Kelly", 
     age: 29, 
     scores: [
-        1, 
-        3, 
-        4, 
-        5
+        "always", 
+        "never", 
+        "sometimes"
     ]
 }, {
     name: "Jose", 
     age: 21, 
     scores: [
-        4, 
-        3, 
-        2, 
-        1
+        "always", 
+        "never", 
+        "sometimes"
     ]
 },{
     name: "Emily", 
     age: 31, 
     scores: [
-        3, 
-        2, 
-        5, 
-        1
+        "always", 
+        "never", 
+        "sometimes"
     ]
 }];
 
 //routes 
 
+var survey = [];
+
 app.get("/", function(req, res) {
-res.sendFile(path.join(__dirname, "home.html"));
+res.sendFile(path.join(__dirname, "./public/home.html"));
 });
 
+
+app.get("/", function(req,res){
+    res.sendFile(path.join(__dirname, "./public/survey.html"));
+});
 
 app.get("/:friends", function(res, req){
     var chosen = req.params.friends;
